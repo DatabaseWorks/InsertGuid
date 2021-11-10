@@ -17,6 +17,9 @@ namespace InsertGuid
 
         public const string guidInsertGuidCmdSetString = "1440eeb0-81f7-4062-b88a-99ca97249e33";
         public static Guid guidInsertGuidCmdSet = new Guid(guidInsertGuidCmdSetString);
+
+        public const string guidInsertNanoIdCmdSetString = "0e518e9c-e864-43d0-82d4-df53209d5eaa";
+        public static Guid guidInsertNanoIdCmdSet = new Guid(guidInsertNanoIdCmdSetString);
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
@@ -24,5 +27,6 @@ namespace InsertGuid
     internal sealed partial class PackageIds
     {
         public const int cmdInsertGuid = 0x0100;
+        public const int cmdInsertNanoId = 0x0101;
     }
 }
